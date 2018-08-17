@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+    <script src="js/events.js"></script>
+
+    <title>Acx Içara</title>
+</head>
+<body>
+
+
+
+    <div id="interface">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <h1 class="navbar-brand" href="#">Acx-Içara</h1>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#interface">Início</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobreXadrez">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#borderText">Circuito Içarense</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#hideShowArticle">Contato</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <figure id="imagemMain" class="mb-5">
+        <div class="sombra">
+            <form id="form" name="form1" method="post" action="enviarEmail.php">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center">Inscrição VI Circuito Içarense!</h5>
+                        </div>
+                        <div class="modal-body">
+
+                                <div class="form-row text-left" id="forms">
+                                    <div class="form-group col-md-8">
+                                        <label for="inputNome"></label>
+                                        <input required type="text" class="form-control" id="inputNome" placeholder="Nome completo" name="nome" maxlength="40">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                    <label for="inputClube"></label>
+                                    <input required="required" type="text" class="form-control" id="inputClube" placeholder="Clube" name="clube" maxlength="40">
+                                </div>
+                                </div>
+
+                                <label>Data de nascimento</label>
+                                <div class="form-row text-left">
+                                <div class="form-group col-sm-12">
+                                    <input type="text" required="required" name="dataNascimento" id="inputDia" class="form-control" maxlength="10" onkeyup="barraForm(this);" placeholder="Ex: 31/12/2000">
+                                </div>
+                                </div>
+                                <div class="form-row text-left">
+                                    <div class="form-group col-sm-6">
+                                        <label for="inputDivisao">Divisão</label>
+                                        <select required="required" id="inputDivisao" class="form-control" name="divisao">
+                                            <option selected>Escolha...</option>
+                                            <option>Escolar</option>
+                                            <option>Intermediaria</option>
+                                            <option>Superior</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-sm-6">
+                                        <label for="inputSexo">Sexo</label>
+                                        <select required="required" id="inputSexo" class="form-control" name="sexo">
+                                            <option selected>Escolha...</option>
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <img src="assets/main.jpg">
+    </figure>
+        <h3 id="sobreXadrez" class="textContainer text-center mt-5">Sobre o Xadrez</h3>
+    <section id="hideShow" class="container-fluid">
+
+        <div class="row mt-3 mb-5">
+        <div class="col-md-3 text-center">
+            <div style="font-size: 80px;color: #0e2d45">
+            <i class="fas fa-chess-board"></i>
+            </div>
+            <p>Um jogo formado por dois exércitos num tabuleiro de 64 casas, onde cada peça cumpre sua função para abater o "inimigo".</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <div style="font-size: 80px;color: #0e2d45">
+                <i class="fas fa-chess-rook"></i>
+            </div>
+            <p>A Torre tem o poder de andar na horizontal e vertical. Tende a ser muito forte num final de jogo.</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <div style="font-size: 80px;color: #0e2d45">
+                <i class="fas fa-chess-bishop"></i>
+            </div>
+            <p>O Bispo é uma peça que anda em diagonal, tem um forte poder de atacar ambas as alas do tabuleiro.</p>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div style="font-size: 80px;color: #0e2d45">
+                <i class="fas fa-chess-queen"></i>
+            </div>
+            <p>A Dama é a peça mais poderosa do tabuleiro, ela consegue realizar a função do Bispo e da Torre durante a partida.</p>
+        </div>
+            <div class="col-md-3 text-center">
+                <div style="font-size: 80px;color: #0e2d45">
+                    <i class="fas fa-chess-knight"></i>
+                </div>
+                <p>O cavalo é a unica peça que tem o poder de saltar por cima das outras, se move fazendo um "L".</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div style="font-size: 80px;color: #0e2d45">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <p>O peão anda somente uma casa para frente ou duas quando se encontra na posição inicial e realiza a captura na diagonal.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div style="font-size: 80px;color: #0e2d45">
+                    <i class="fas fa-chess-king"></i>
+                </div>
+                <p>O Rei é a peça mais importante do Xadrez, ela que decreta a vitória. Se um rei levar o famoso Xeque-Mate perde a partida!</p>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div style="font-size: 80px;color: #0e2d45">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <p>Ganha quem conseguir realizar o Xeque-Mate primeiro!</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div id="borderText">
+        <h3 class="text-center mt-5 mb-5 textContainer"style="color: #fff">Circuito Içarense de Xadrez Rapido
+            <p class = "text-center mt-5">Um dos maiores eventos da região Sul de Santa Catarina, <br> que reúne atletas de diversos lugares!</p></h3>
+    </div>
+        <article id="hideShow2">
+    <div class="container-fluid mt-2">
+
+        <div class="row col-md-12 ml-1 mt-4">
+
+                <div class="col-md-3">
+                    <div class="cardBlue">
+                    <img class="card-img-top rounded-bottom" src="assets/foto01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="tittleCard">Concentração <i class="fas fa-chess-bishop"></i></h4>
+                        <p class="card-text text-justify">Jogar xadrez também pode estimular a concentração profunda e calma.  </p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div href="#" class="cardBlue">
+                    <img class="card-img-top rounded-bottom" src="assets/foto02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="tittleCard">Grande torneio <i class="fas fa-chess-king"></i></h4>
+                        <p class="card-text text-justify">Reune atletas de varias cidades da região e de reconhecimento nacional em suas categorias. </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div href="#" class="cardBlue">
+                    <img class="card-img-top rounded-bottom" src="assets/foto03.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="tittleCard">Premiação <i class="fas fa-chess-knight"></i></h4>
+                        <p class="card-text text-justify"> Atletas premiados em diversas categorias, incluindo medalhas gerais até o 10º Colocado. </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <div href="#" class="cardBlue">
+                    <img class="card-img-top rounded-bottom" src="assets/foto04.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="tittleCard">Para todas idades <i class="fas fa-chess-queen"></i></h4>
+                        <p class="card-text text-justify">Torneio para todos que queiram participar e prestigiar este grande evento da região! </p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        <article id="hideShowArticle">
+        <div class="col-md-5 offset-md-3">
+            <h3 class="textContainer text-center mt-5">Contato</h3>
+            <p class="text-justify paragraph">O nucleo da Acx-Içara se encontra na R. Sete de Setembro 462, Içara - SC,88820-000/Sala 307,Edificio Dona Nena. Neste local é realizado treinos diarios
+            com a equipe de rendimento de Içara, junto com novos atletas que tiverem o interesse.Caso tenha interesse em participar dos treinos, entrar em contato com
+            alguns dos meios abaixo!
+            </p>
+            <ul>
+                <li><i class="fas fa-fax"></i> (48)99612-4359</li>
+                <li><i class="far fa-envelope"></i> claudionorxz@gmail.com</li>
+                <li><i class="far fa-envelope"></i> giovaneleacina@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+        </article>
+        </section>
+        <footer class="mt-5">
+            <div id="iconFooter1">
+                <i class="fas fa-chess"></i>
+            </div>
+            <div class="col-lg-12 mt-5 row mb-4">
+                <div class="col-lg-4">
+
+            <ul class="mt-3">
+                <h3 class="mb-5 tittleH3">Contato</h3>
+                <li><i class="fas fa-map-marker-alt tamIcon mr-3"></i><span class="paragraph">Içara/Sala 307,Edificio Dona Ana.</span></li>
+                <li><i class="fas fa-phone tamIcon  mt-3 mr-2"></i><span class="paragraph">(48)99695-6313</span></li>
+                <li><i class="fas fa-envelope tamIcon mt-3 mr-2"></i><span class="paragraph">giovaneleacina@gmail.com</span></li>
+
+            </ul>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <ul>
+                        <h3 class="mb-5 tittleH3">Horario do treino</h3>
+                        <li><i class="far fa-clock tamIcon mr-2"></i><span class="paragraph">Segunda: 13:30h as 16:30h</span></li>
+                        <li><i class="far fa-clock tamIcon  mt-3 mr-2"></i><span class="paragraph">Quarta: 13:30h as 16:30h</span></li>
+                        <li><i class="far fa-clock tamIcon mt-3 mr-2"></i><span class="paragraph">Sexta: 13:30h as 16:30h</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <h3 class="mb-5 tittleH3">Local dos Treinos</h3>
+            <iframe  id="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d874.7746426441512!2d-49.3020846707933!3d-28.71659699889904!2m3!1f0!2f0!3f0!3m2!1i102]
+            4!2i768!4f13.1!3m3!1m2!1s0x95217e9453fd4247%3A0xe7f00aae94b2956c!2sICR-252%2C+462+-+Cristo+Rei%2C+I%C3%A7ara+-+SC%2C+88820-000!5e0!3m2!1spt-BR!2sbr!4v15
+            22210039897" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div>
+                <nav class="navbar navbar-expand-md navbar-dark navFooter">
+
+
+                        <div>
+                                <a href="https://www.facebook.com/xadrezicara/" target="_blank"><i class="fab fa-facebook-square iconFooter ml-4 mr-3"></i></a>
+                                <a href="https://www.instagram.com/acxicara/" target="_blank"><i class="fab fa-instagram iconFooter mr-3"></i></a>
+                                <a href="http://acxicara.com.br/" target="_blank"><i class="fas fa-rss-square iconFooter"></i></a>
+
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <h7>Desenvolvedor <span id="des" style="color: darkslateblue">Giovane S. Leacina</span></h7>
+                        </div>
+                </nav>
+            </div>
+    </footer>
+    </div>
+<!--Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>
+
